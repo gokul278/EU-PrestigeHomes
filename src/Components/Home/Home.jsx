@@ -26,13 +26,13 @@ export const Home = () => {
           backgroundImage: `url(${bg2})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
-          backgroundAttachment: "fixed", // Fixed background
+          backgroundAttachment: "fixed",
         }}
       ></div>
+      {loadingstatus ? <Loader /> : null}
 
       <div className="relative w-[100%] pt-20 z-10">
         {/* Show loader */}
-        {loadingstatus ? <Loader /> : null}
 
         {/* Content that will scroll over the fixed background */}
         <div
@@ -64,11 +64,14 @@ export const Home = () => {
                 className=" w-[300px] h-[400px] rounded-md lg:w-[450px] lg:h-[500px]"
                 src={img1}
                 alt="img1"
+                data-aos="fade-right"
               />
               <img
                 className=" w-[200px] h-[200px] ml-[-180px] lg:ml-[-200px] mb-5 rounded-md lg:w-[250px] lg:h-[250px]"
                 src={img2}
                 alt="img2"
+                data-aos="fade-right"
+                data-aos-delay="50"
               />
             </div>
             <div className="w-[100%] lg:w-[50%] flex flex-col justify-center items-center lg:items-start">
