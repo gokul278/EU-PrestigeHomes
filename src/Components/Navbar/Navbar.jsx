@@ -68,6 +68,7 @@ export default function Navbar() {
                   }`}
                   onClick={() => {
                     navigate("/");
+                    setIsToggleOpen(!isToggleOpen);
                   }}
                 >
                   <span

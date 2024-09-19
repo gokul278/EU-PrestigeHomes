@@ -1,0 +1,40 @@
+/* From Uiverse.io by kamehame-ha */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 15px;
+  color: #fff;
+  background-color: #306677;
+  outline: 3px #306677 solid;
+  outline-offset: -3px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: 400ms;
+}
+
+.button .text {
+  color: white;
+  font-weight: 700;
+  font-size: 1em;
+  transition: 400ms;
+}
+
+.button svg path {
+  transition: 400ms;
+}
+
+.button:hover {
+  color: #306677;
+  background-color: transparent;
+}
+
+.button:hover .text {
+  color: #306677;
+}
+
+.button:hover svg path {
+  fill: #306677;
+}

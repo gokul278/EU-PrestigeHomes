@@ -8,14 +8,14 @@ import de from "../../assets/Img/Logo/de.svg";
 
 export const Footer = () => {
   return (
-    <div className="w-[100%]" align="center">
-      <div className="w-[90%] lg:w-[80%] bg-[#fff]">
-        <img className="w-[40%]" src={logo} alt="logo" />
+    <div className="w-[100%] relative bg-[#fff] z-10" align="center">
+      <div className="w-[90%] lg:w-[80%]">
+        <img className="w-[80%] lg:w-[40%]" src={logo} alt="logo" />
         <div className="w-[100%] flex justify-center pt-10 flex-wrap gap-x-10">
           <a
             href="tel:41779414144"
             target="_blank"
-            className="text-[20px] font-bold font-space"
+            className="text-[18px] lg:text-[20px] font-semibold font-montserrat"
           >
             <i class="fa-solid fa-phone border-2 border-[#306677] p-2 rounded text-[#306677]"></i>
             &nbsp;&nbsp;+41 779414144
@@ -23,7 +23,7 @@ export const Footer = () => {
           <a
             href="mailto:info@eu-prestigehomes.com"
             target="_blank"
-            className="text-[20px] font-bold font-space"
+            className="text-[18px] lg:text-[20px] mt-8 lg:mt-0 font-semibold font-montserrat"
           >
             <i class="fa-solid fa-envelope border-2 border-[#306677] p-2 rounded text-[#306677]"></i>
             &nbsp;&nbsp;info@eu-prestigehomes.com
@@ -33,7 +33,7 @@ export const Footer = () => {
           <a
             href="https://www.instagram.com/eu.prestigehomes/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"
             target="_blank"
-            className="text-[20px] font-bold font-space"
+            className="text-[20px] font-normal font-space"
           >
             <i class="fa-brands fa-square-instagram border-2 border-[#306677] p-2 rounded text-[#306677]"></i>
           </a>
@@ -47,7 +47,7 @@ export const Footer = () => {
           <a
             href=""
             target="_blank"
-            className="text-[20px] font-bold font-space"
+            className="text-[20px] font-normal font-space"
           >
             <i class="fa-brands fa-linkedin-in border-2 border-[#306677] p-2 rounded text-[#306677]"></i>
           </a>
@@ -59,7 +59,7 @@ export const Footer = () => {
           <img src={es} className="w-[30px]" alt="logo" />
         </div>
       </div>
-      <div className="w-[100%] mt-10 py-3 text-[18px] text-[#fff] font-space bg-[#306677]">
+      <div className="w-[100%] mt-10 py-3 text-[16px] lg:text-[18px] text-[#fff] font-montserrat bg-[#306677]">
         Copyright © 2023 by EU-PrestigeHomes
       </div>
     </div>
